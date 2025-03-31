@@ -1,0 +1,24 @@
+<%
+' HTML 이스케이프 함수
+Function HtmlEncode(str)
+    HtmlEncode = Replace(str, "<", "&it;")
+    HtmlEncode = Replace(HtmlEncode, ">", "&gt;")
+    HtmlEncode = Replace(HtmlEncode, """", "&quot;")
+    HtmlEncode = Replace(HtmlEncode, "'", "&#39;")
+    HtmlEncode = Replace(HtmlEncode, "&", "&amp;")
+    HtmlEncode = Replace(HtmlEncode, "/", "&#x2F;")
+    HtmlEncode = Replace(HtmlEncode, "(", "&#40;")
+    HtmlEncode = Replace(HtmlEncode, ")", "&#41;")
+
+
+
+End Function
+
+
+%>
+
+
+파라미터 처리..
+
+bs_ym = HtmlEncode (bs_ym)
+
