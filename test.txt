@@ -22,3 +22,6 @@ End Function
 
 bs_ym = HtmlEncode (bs_ym)
 
+
+추가 했다.. 33333333333
+
